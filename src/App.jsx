@@ -1,9 +1,9 @@
-import Jumbotron from "./components/jumbotron"
+import Jumbotron from "./components/jumbotron/Jumbotron"
 function App() {
 
   return (
     <>
-     <Jumbotron />
+      <Jumbotron />
     </>
   )
 }

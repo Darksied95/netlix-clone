@@ -1,4 +1,4 @@
-import { Inner } from "./styles/jumbotron"
+import { Inner } from "./styles/jumbotron.styles"
 
 const Jumbotron = () => {
     return (
