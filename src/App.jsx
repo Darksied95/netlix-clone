@@ -1,10 +1,19 @@
 import Jumbotron from "./components/jumbotron/Jumbotron"
+import jumboData from "./fixtures/jumbo.json"
+
 function App() {
 
   return (
-    <>
-      <Jumbotron />
-    </>
+    <Jumbotron.Container >
+      {jumboData.map(item => (
+        <Jumbotron key={item.id} direction={item.direction}>
+          <p>{item.title}</p>
+          <p>{item.subTitle}</p>
+          <p>{item.image}</p>
+          <p>{item.alt}</p>
+        </Jumbotron>
+      ))}
+    </Jumbotron.Container>
   )
 }
 
