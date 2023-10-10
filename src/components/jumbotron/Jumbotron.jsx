@@ -48,7 +48,7 @@ Jumbotron.Title.propTypes = {
     restProps: PropTypes.array
 }
 Jumbotron.SubTitle.propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     restProps: PropTypes.array
 }
 Jumbotron.Container.propTypes = {
