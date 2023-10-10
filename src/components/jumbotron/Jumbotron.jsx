@@ -1,11 +1,13 @@
-import { Inner, Container, Pane, Title, SubTitle, Image } from "./styles/jumbotron.styles"
+import { Inner, Container, Pane, Title, SubTitle, Image, Item } from "./jumbotron.styles"
 import PropTypes from 'prop-types'
 
 const Jumbotron = ({ children, direction = 'row', ...restProps }) => {
     return (
-        <Inner direction={direction}>
-            {children}
-        </Inner>
+        <Item {...restProps}>
+            <Inner direction={direction} >
+                {children}
+            </Inner>
+        </Item>
     )
 }
 
